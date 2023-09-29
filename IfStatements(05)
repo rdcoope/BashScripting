@@ -1,0 +1,13 @@
+#!/bin/bash
+
+command=htop
+
+if command -v $command
+then
+    echo "$command is installed, running it..."
+else
+    echo "$command is not installed. Installing it now..."
+    sudo apt update && sudo apt install -y $command
+fi
+
+$command
