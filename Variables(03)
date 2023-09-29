@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+word="Fun"
+
+# ***** $() is for storing command output as variable *****
+files=$(ls)
+
+echo "Linux is $word"
+echo "Videogames are $word"
+echo "Sunny days are $word"
